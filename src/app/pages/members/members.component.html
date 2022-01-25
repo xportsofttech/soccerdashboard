@@ -1,0 +1,282 @@
+<section class="main_dashboard  profile_page">
+	<div class="db_parts">
+        <div class="publish_btn edit_profilebtn invite_followerbtn">FOLLOWERS <!--<button type="submit">Invite followers</button>--></div>		
+		<div class="db_right">			
+				
+
+                
+
+                <div class="events_table members_list">
+					<div class="table_outer">
+                        <div class="row">
+                            <div class="col-md-3 col-6 col-xs-12" *ngFor="let follow of followlist">
+                                <div class="members_box">
+                                    <div class="members_back_img">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div class="user_img">
+                                        <img src="{{follow.img}}" alt=""/>
+                                        <h4>{{follow.name}}</h4>
+                                        <p>{{follow.classification}}</p>
+                                        <p>{{follow.country}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                      
+
+                       <!--<div class="follow_block">
+                       <div class="follow_imgmain">
+                            <div class="follow_img">
+                            <img src="assets/images/follow2.jpg">
+                            <div class="flag_icon"><img src="assets/images/flag2.png"></div>
+                        </div>
+                        </div>
+                        <div class="follow_namesinfos">
+                            <h3>DARRYL DAY</h3>
+                            <div class="follow_social">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            </div>
+                            <p>Is following you since 5 days</p>
+                        </div>
+                        <div class="follow_right">
+                            <div class="publish_btn edit_profilebtn invite_followermsg"><button type="submit" data-toggle="modal" data-target="#exampleModal">Message</button></div>
+                            <button type="submit" class="follow_del"><img src="assets/images/follow_delete.png"></button>
+                        </div>
+                   </div>
+
+                   <div class="follow_block">
+                    <div class="follow_imgmain">
+                        <div class="follow_img">
+                        <img src="assets/images/follow3.jpg">
+                        <div class="flag_icon"><img src="assets/images/flag1.png"></div>
+                    </div>
+                    </div>
+                    <div class="follow_namesinfos">
+                        <h3>RILEY NEWMAN</h3>
+                        <div class="follow_social">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        </div>
+                        <p>Is following you since 3 days</p>
+                    </div>
+                    <div class="follow_right">
+                        <div class="publish_btn edit_profilebtn invite_followermsg"><button type="submit"  data-toggle="modal" data-target="#exampleModal">Message</button></div>
+                        <button type="submit" class="follow_del"><img src="assets/images/follow_delete.png"></button>
+                    </div>
+               </div>
+               <div class="follow_block">
+                <div class="follow_imgmain">
+                    <div class="follow_img">
+                    <img src="assets/images/follow1.jpg">
+                    <div class="flag_icon"><img src="assets/images/flag1.png"></div>
+                </div>
+                </div>
+                <div class="follow_namesinfos">
+                    <h3>Erin Gonzales</h3>
+                    <div class="follow_social">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    </div>
+                    <p>Is following you since 3 days</p>
+                </div>
+                <div class="follow_right">
+                    <div class="publish_btn edit_profilebtn invite_followermsg"><button type="submit"  data-toggle="modal" data-target="#exampleModal">Message</button></div>
+                    <button type="submit" class="follow_del"><img src="assets/images/follow_delete.png"></button>
+                </div>
+           </div>
+
+           <div class="follow_block">
+            <div class="follow_imgmain">
+                <div class="follow_img">
+                <img src="assets/images/follow2.jpg">
+                <div class="flag_icon"><img src="assets/images/flag2.png"></div>
+            </div>
+            </div>
+            <div class="follow_namesinfos">
+                <h3>DARRYL DAY</h3>
+                <div class="follow_social">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </div>
+                <p>Is following you since 5 days</p>
+            </div>
+            <div class="follow_right">
+                <div class="publish_btn edit_profilebtn invite_followermsg"><button type="submit"  data-toggle="modal" data-target="#exampleModal">Message</button></div>
+                <button type="submit" class="follow_del"><img src="assets/images/follow_delete.png"></button>
+            </div>
+       </div>
+
+       <div class="follow_block">
+        <div class="follow_imgmain">
+            <div class="follow_img">
+            <img src="assets/images/follow3.jpg">
+            <div class="flag_icon"><img src="assets/images/flag1.png"></div>
+        </div>
+    </div>
+        <div class="follow_namesinfos">
+            <h3>RILEY NEWMAN</h3>
+            <div class="follow_social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            </div>
+            <p>Is following you since 3 days</p>
+        </div>
+        <div class="follow_right">
+            <div class="publish_btn edit_profilebtn invite_followermsg"><button type="submit" data-toggle="modal" data-target="#exampleModal">Message</button></div>
+            <button type="submit" class="follow_del"><img src="assets/images/follow_delete.png"></button>
+        </div>
+   </div>-->
+              
+					</div>                
+
+                <!--<div class="pg_numbers">
+                    <div class="db_pagination">
+                        <a href="#" class="pg_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#" class="pg_next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+            </div>-->  
+            
+                
+                </div>
+		</div><!--db_right-->
+	</div><!--db_parts-->
+</section>
+<!-- <div class="page-header">
+    <div class="row align-items-md-center">
+        <div class="col-md-6">
+            <div class="media m-v-10">
+                <nz-avatar nzIcon="star" [nzSize]="40" [nzShape]="'square'" class="ant-avatar-cyan"></nz-avatar>
+                <div class="media-body m-l-15">
+                    <h6 class="mb-0">All Members (9)</h6>
+                    <span class="text-gray font-size-13">Dev Team</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="text-md-right m-v-10">
+                <nz-radio-group [(ngModel)]="view">
+                    <label nz-radio-button nzValue="listView" nzTooltipTitle="List View" nz-tooltip>
+                        <i class="font-size-16" nz-icon nzType="ordered-list" theme="outline"></i>
+                    </label>
+                    <label nz-radio-button nzValue="cardView" nzTooltipTitle="Card View" nz-tooltip>
+                        <i class="font-size-16" nz-icon nzType="appstore" theme="outline"></i>
+                    </label>
+                </nz-radio-group>    
+            </div>
+        </div>
+    </div>
+</div> 
+<div class="row">
+    <div class="col-lg-11 mx-auto">
+       
+        <div class="row" *ngIf="view == 'cardView'">
+            <div class="col-md-3" *ngFor="let item of memberList">
+                <nz-card> 
+                    <div class="m-t-20 text-center">
+                        <nz-avatar class="shadow" [nzSize]="100" nzIcon="user" [nzSrc]="item.img"></nz-avatar>
+                        <h4 class="m-t-30">{{item.name}}</h4>
+                        <p>{{item.mail}}</p>
+                    </div>
+                    <div class="text-center m-t-15">
+                        <button class="m-r-10" nz-button nzType="default" nzShape="circle"><i nz-icon nzType="facebook"></i></button>
+                        <button class="m-r-10" nz-button nzType="default" nzShape="circle"><i nz-icon nzType="twitter"></i></button>
+                        <button class="m-r-10" nz-button nzType="default" nzShape="circle"><i nz-icon nzType="instagram"></i></button>
+                    </div>
+                    <div class="text-center m-t-30">
+                        <a [routerLink]="['/pages/profile']" nz-button nzType="primary" nzGhost>
+                            <i nz-icon nzType="mail" theme="outline"></i>
+                            <span class="m-l-5">Contact</span>
+                        </a>
+                    </div>
+                </nz-card>
+            </div>
+        </div>
+      
+        <nz-card *ngIf="view == 'listView'">
+            <nz-table #listViewTable [nzData]="memberList">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Social</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of listViewTable.data">
+                        <td>
+                            <div class="media align-items-center">
+                                <nz-avatar nzIcon="star" [nzSrc]="item.img"></nz-avatar>
+                                <div class="media-body m-l-15">
+                                    <h6 class="mb-0">{{item.name}}</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="text-gray">{{item.mail}}</span>
+                        </td>
+                        <td>
+                            <button class="m-r-10" nz-button nzType="default" nzShape="circle"><i nz-icon nzType="facebook"></i></button>
+                            <button class="m-r-10" nz-button nzType="default" nzShape="circle"><i nz-icon nzType="twitter"></i></button>
+                            <button class="m-r-10" nz-button nzType="default" nzShape="circle"><i nz-icon nzType="instagram"></i></button>
+                        </td>
+                        <td class="text-right">
+                            <a [routerLink]="['/pages/profile']" nz-button nzType="primary" nzGhost>
+                                <i nz-icon nzType="mail" theme="outline"></i>
+                                <span class="m-l-5">Contact</span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </nz-table>
+        </nz-card>
+    </div>
+</div>-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog follow_modal" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="follow_popsinfos">
+                <div class="follow_popimg"><img src="assets/images/follow_popimg.jpg"></div>
+                <div class="follow_infosdec">
+                    <div class="follow_poplogo"><img src="assets/images/login_logo.png"></div>
+                    <h4>Invite Friends and Gain Followers</h4>
+                    <p>Share your Invitation Link</p>
+                    <input type="text"> <img src="assets/images/folo_invitelink_icon.jpg"> 
+                    <div class="invite_via">
+                        <h3>Invite Via:-</h3>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

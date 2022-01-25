@@ -1,0 +1,56 @@
+<section class="zew_login">
+	<div class="container">
+		<div class="login_bx">
+			<div class="lg_detail">
+				<div class="logo_img"><img src="assets/images/login_logo.png"></div>
+
+				<div class="lg_box">
+					<h3>Verify Your Code</h3>
+					
+					<form nz-form [formGroup]="loginForm" nzLayout="vertical"
+						  (ngSubmit)="submitForm()">
+						<div *ngIf="msg" style="color:red;">Invalid validate code! Please verify and try again</div>
+						<!-- <div class="form-group">
+							<nz-form-item>
+
+								<label for="code">Validate Code</label>
+								<div class="input-group">
+
+									<nz-form-control nzErrorTip="Please input your code!">
+										<nz-input-group>
+											<input type="text" class="form-control" nz-input formControlName="code" placeholder="Type your code">
+										</nz-input-group>
+									</nz-form-control>
+
+
+								</div>
+							</nz-form-item>
+						</div> -->
+
+						<div class="form-group">
+							<label for="exampleInputEmail1">Validate Code</label>
+
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><img src="assets/images/validate_code.png"></div>
+								</div>
+								<nz-form-control nzErrorTip="Please input your code!">
+								<input type="text" class="form-control" nz-input formControlName="code" placeholder="Type your code" id="phonenumber">
+								</nz-form-control>
+							</div>
+						</div>
+
+						<div class="sub_bttn">
+							<button type="submit" class="btn btn-primary" >Validate</button>
+						</div>
+
+					</form>
+
+
+
+				</div>
+			</div>
+		</div>
+
+	</div><!--container-->
+</section><!---zew_login--->

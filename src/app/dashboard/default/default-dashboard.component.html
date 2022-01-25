@@ -1,0 +1,430 @@
+<section class="main_dashboard">
+	<div class="db_parts">
+		<!--<div class="db_left">
+		  <div class="logo"><img src="assets/images/login_logo.png"></div>
+
+		  <div class="sidebar">
+
+		  </div>
+		</div>-->
+		<!--db_left-->
+		<div class="db_right">
+			
+			<div class="db_body">
+				<div class="db_blocks">
+					<div class="row">
+
+						<div class="col-md-4">
+							<div class="db_blockinfos">
+								<div class="db_titleinfos">
+									<h4>Carrier status</h4>
+									<p>{{model.current_status}}</p>
+								</div>
+								<div class="db_icon">
+									<img src="assets/images/dash_icon1.png">
+								</div>
+								<div class="left_shadow"><img src="assets/images/dashblock_shadownleft.png"></div>
+								<div class="right_shadow"><img src="assets/images/dashblock_shadownright.png"></div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="db_blockinfos">
+								<div class="db_titleinfos">
+									<h4>Followers number</h4>
+									<h3>{{model.followers_count}}</h3>
+								</div>
+								<div class="db_icon">
+									<img src="assets/images/dash_icon2.png">
+								</div>
+								<div class="left_shadow"><img src="assets/images/dashblock_shadownleft.png"></div>
+								<div class="right_shadow"><img src="assets/images/dashblock_shadownright.png"></div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="db_blockinfos">
+								<div class="db_titleinfos">
+									<h4>Total published <br>prognostics number</h4>
+									<h3>{{model.progonisticnumber}}</h3>
+								</div>
+								<div class="db_icon">
+									<img src="assets/images/dash_icon3.png">
+								</div>
+								<div class="left_shadow"><img src="assets/images/dashblock_shadownleft.png"></div>
+								<div class="right_shadow"><img src="assets/images/dashblock_shadownright.png"></div>
+							</div>
+
+						</div>
+
+						<div class="col-md-4">
+							<div class="db_blockinfos">
+								<div class="db_titleinfos">
+									<h4>Performance indicator %</h4>
+									<p>{{model.performanceindicator}}%</p>
+								</div>
+								<div class="db_icon">
+									<img src="assets/images/dash_icon4.png">
+								</div>
+								<div class="left_shadow"><img src="assets/images/dashblock_shadownleft.png"></div>
+								<div class="right_shadow"><img src="assets/images/dashblock_shadownright.png"></div>
+							</div>
+
+						</div>
+
+						<div class="col-md-4">
+							<div class="db_blockinfos">
+								<div class="db_titleinfos">
+									<h4>Global Ranking</h4>
+									<h3>{{model.globalranking}}</h3>
+								</div>
+								<div class="db_icon">
+									<img src="assets/images/dash_icon5.png">
+								</div>
+								<div class="left_shadow"><img src="assets/images/dashblock_shadownleft.png"></div>
+								<div class="right_shadow"><img src="assets/images/dashblock_shadownright.png"></div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="db_blockinfos">
+								<div class="db_titleinfos">
+									<h4>Token balance</h4>
+									<h3>{{model.tokenbalance}}</h3>
+								</div>
+								<div class="db_icon">
+									<img src="assets/images/dash_icon6.png">
+								</div>
+								<div class="left_shadow"><img src="assets/images/dashblock_shadownleft.png"></div>
+								<div class="right_shadow"><img src="assets/images/dashblock_shadownright.png"></div>
+							</div>
+						</div>
+
+					</div><!--row-->
+				</div><!--db_blocks-->
+
+				<div class="events_table">
+					<div class="event_title">events available for prognostics</div>
+					<div class="table_outer">
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										
+										<th>Championship</th>
+										<th>Team A</th>
+										<th>Team B</th>
+										<th>Event Date</th>
+										<th>&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+								
+									<tr *ngFor="let product of products">
+
+										
+										<td>
+											{{product.leaguename}}
+										</td>
+										<td><img src="{{product.team_awaylogo}}"> {{product.team_awayname}}</td>
+										<td><img src="{{product.team_homelogo}}"> {{product.team_homename}}</td>
+										<td>{{product.start_time | date:'dd/MM/yyyy' }}</td>
+										<td><button type="submit" data-toggle="modal" (click)="SetPronostic(product)" >Set a Pronostic</button></td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="pg_numbers">
+						<div class="row">
+							<!--<div class="col-md-6  col">
+								<div class="publish_btn"><button type="submit">Publish your prognostic</button></div>
+							</div>-->
+							<!--<div class="col-md-6  col">
+								<div class="db_pagination">
+									<a href="#" class="pg_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+									<a href="#" class="active">1</a>
+									<a href="#">2</a>
+									<a href="#" class="pg_next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+							</div>-->
+						</div>
+					</div><!--pg_numbers-->
+					<div class="ads_blocks">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="ads_infos">
+									<img src="assets/images/ads_bg.jpg">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="ads_infos">
+									<img src="assets/images/ads_bg.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!--db_body-->
+		</div><!--db_right-->
+	</div><!--db_parts-->
+</section>
+<!--<div class="row">
+    <div class="col-md-6 col-lg-3">
+        <nz-card>
+            <div class="media align-items-center">
+                <nz-avatar [nzSize]="50" nzIcon="user" class="ant-avatar-purple"  ></nz-avatar>
+                <div class="m-l-15">
+                    <h2 class="m-b-0">4</h2>
+                    <p class="m-b-0 text-muted">Adhérents</p>
+                </div>
+            </div>
+        </nz-card>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <nz-card>
+            <div class="media align-items-center">
+                <nz-avatar [nzSize]="60" nzIcon="dollar" class="ant-avatar-blue"  ></nz-avatar>
+                <div class="m-l-15">
+                    <h2 class="m-b-0">€ 12 000</h2>
+                    <p class="m-b-0 text-muted">Donations</p>
+                </div>
+            </div>
+        </nz-card>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <nz-card>
+            <div class="media align-items-center">
+                <nz-avatar [nzSize]="50" nzIcon="line-chart" class="ant-avatar-cyan"  ></nz-avatar>
+                <div class="m-l-15">
+                    <h2 class="m-b-0">+ 17.21%</h2>
+                    <p class="m-b-0 text-muted">Growth</p>
+                </div>
+            </div>
+        </nz-card>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <nz-card>
+            <div class="media align-items-center">
+                <nz-avatar [nzSize]="50" nzIcon="profile" class="ant-avatar-gold"  ></nz-avatar>
+                <div class="m-l-15">
+                    <h2 class="m-b-0">3,685</h2>
+                    <p class="m-b-0 text-muted">Orders</p>
+                </div>
+            </div>
+        </nz-card>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-24">
+        <nz-table #nzTable [nzData]="listOfDisplayData" nzTableLayout="fixed">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th nzCustomFilter>
+                Tournoi
+                <nz-filter-trigger [(nzVisible)]="visible" [nzActive]="searchValue.length > 0" [nzDropdownMenu]="menu">
+                  <i nz-icon nzType="search"></i>
+                </nz-filter-trigger>
+              </th>
+              <th>Rencontre</th>
+              <th>Adresse</th>
+              <th>Pays</th>
+              <th>Donation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of nzTable.data">
+              <td>{{ data.phone
+											}}
+										</td>
+              <td>{{ data.name }}</td>
+              <td>{{ data.email }}</td>
+             
+              <td>{{ data.adress }}</td>
+              <td>{{ data.country }}</td>
+              <td>{{ data.donation }}</td>
+            </tr>
+          </tbody>
+        </nz-table>
+        
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <div class="ant-table-filter-dropdown">
+            <div class="search-box">
+              <input type="text" nz-input placeholder="Search name" [(ngModel)]="searchValue" />
+              <button nz-button nzSize="small" nzType="primary" (click)="search()" class="search-button">
+                Search
+              </button>
+              <button nz-button nzSize="small" (click)="reset()">Réinitialiser</button>
+            </div>
+          </div>
+        </nz-dropdown-menu>
+     
+    </div>
+    
+</div>-->
+
+<div class="modal fade" id="setpronostic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog your_progono_modal" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form nz-form [formGroup]="loginForm" 
+				  (ngSubmit)="submitForm()">
+				<div class="modal-body">
+
+					<div class="your_progonstic">
+						<div class="set_prologo"><img src="assets/images/login_logo.png"></div>
+						<div class="yp_heading">Your prognostic</div>
+						<div class="uefa_league">
+							<h3>uefa champions <span>league</span></h3>
+							<p>{{PopupModel.starting_time | date:'MMM d, y' }}</p>
+							<div class="league_teams">
+
+								<div class="leagu_teaminfo">
+									<img src="{{PopupModel.team_awaylogo}}">
+									<h6>{{PopupModel.team_awayname}}</h6>
+								</div>
+
+								<div class="leagu_teaminfo">
+									<img src="{{PopupModel.team_homelogo}}">
+									<h6>
+										{{PopupModel.team_homename}}
+									</h6>
+								</div>
+
+								<input style="display:none;" type="text" value="{{PopupModel.id}}" formControlName="eventid"/>
+
+							</div>
+						</div>
+					</div>
+					<div class="winner_team">
+						<div class="win_teams">
+							
+							<label class="labl name_labl">
+								<input type="radio" name="radioname_name" value="one_value" />
+								<div class="radio_value">{{PopupModel.team_awayname}}</div>
+							</label>
+						</div>
+						<div class="winner_txt protext_default">Winner</div>
+						<div class="win_teams winteam_empty">
+							
+							<label class="labl name_labl">
+								<input type="radio" name="radioname_name" value="two_value"  />
+								<div class="radio_value">{{PopupModel.team_homename}}</div>
+							</label>
+						</div>
+					</div>
+					<div class="score_team">
+						<div class="scorein score_left">
+							<select formControlName="leftscore">
+						<option *ngFor="let score of scoreList">{{score}}</option>
+
+							</select>
+
+
+						</div>
+						<div class="score_txt protext_default">Scoredi</div>
+						<div class="scorein score_right">
+							<select formControlName="rightscore">
+						<option *ngFor="let score of scoreList">{{score}}</option>
+					</select>
+						</div>
+					</div>
+
+					<div class="goal_numbers">
+						
+						<div class="goalinfo goalleft radio_select">
+							<label class="labl">
+								<input type="radio" name="radioname" value="one_value" />
+								<div class="radio_value">0-2</div>
+							</label>
+							<label class="labl">
+								<input type="radio" name="radioname" value="another" />
+								<div class="radio_value">2-3</div>
+							</label>
+							<label class="labl">
+								<input type="radio" name="radioname" value="another" />
+								<div class="radio_value">3+</div>
+							</label>
+							<!--<input type="text" value="0-2">
+	<input type="text" value="2-3">
+	<input type="text" value="3+">-->
+						</div>
+						<div class="score_txt protext_default">Goal Numbers</div>
+						<div class="goalinfo goalright">
+							<label class="labl">
+								<input type="radio" name="radioname1" value="one_value" />
+								<div class="radio_value">0-2</div>
+							</label>
+							<label class="labl">
+								<input type="radio" name="radioname1" value="another" />
+								<div class="radio_value">2-3</div>
+							</label>
+							<label class="labl">
+								<input type="radio" name="radioname1" value="another" />
+								<div class="radio_value">3+</div>
+							</label>
+							<!--<input type="text" value="0-2">
+	<input type="text" value="2-3">
+	<input type="text" value="3+">-->
+						</div>
+					</div>
+
+					<div class="goal_numbers fault_numbers">
+						<div class="goalinfo goalleft">
+							<label class="labl">
+								<input type="radio" name="radioname2" value="one_value" />
+								<div class="radio_value">0-2</div>
+							</label>
+							<label class="labl">
+								<input type="radio" name="radioname2" value="another" />
+								<div class="radio_value">2-3</div>
+							</label>
+							<label class="labl">
+								<input type="radio" name="radioname2" value="another" />
+								<div class="radio_value">3+</div>
+							</label>
+							<!--<input type="text" value="0-2">
+	<input type="text" value="2-3">
+	<input type="text" value="3+">-->
+						</div>
+						<div class="score_txt protext_default">Faults Numbers</div>
+						<div class="goalinfo goalright radio_select">
+							<label class="labl">
+								<input type="radio" name="radioname3" value="one_value" />
+								<div class="radio_value">0-2</div>
+							</label>
+							<label class="labl">
+								<input type="radio" name="radioname3" value="another" />
+								<div class="radio_value">2-3</div>
+							</label>
+							<label class="labl">
+								<input type="radio" name="radioname3" value="another" />
+								<div class="radio_value">3+</div>
+							</label>
+							<!--<input type="text" value="0-2">
+	<input type="text" value="2-3">
+	<input type="text" value="3+">-->
+						</div>
+					</div>
+
+					<div class="your_opnions_team">
+						<!--<div class="opnion_fill"><textarea placeholder="Enter your opinion"></textarea></div>-->
+						<div class="winner_txt protext_default">Your Opinion</div>
+						<div class="opnion_fill"><textarea placeholder="Enter your opinion" formControlName="opinion"></textarea></div>
+					</div>
+
+					<div class="publish_btn pop_publishbtn"><button type="submit">Publish</button></div>
+
+
+				</div>
+			</form>
+		</div>
+    </div>
+  </div>

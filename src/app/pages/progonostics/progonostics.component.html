@@ -1,0 +1,121 @@
+<section class="main_dashboard">
+	<div class="db_parts">
+    
+        <div class="db_right">    
+            
+            <div class="db_blocks ps_blocks">
+            	<div class="row">
+                	
+                    <div class="col-md-3">
+                    	<div class="db_blockinfos">
+                            <div class="db_titleinfos">
+                            	<h4>Global pronostics number</h4>
+                                <h3>04567</h3>
+                            </div>
+                              <div class="db_icon db_icon1">
+                            	<img src="assets/images/progo_icon1.png">
+                            </div>
+                            <!--<div class="left_shadow"><img src="images/dashblock_shadownleft.png"></div>
+                            <div class="right_shadow"><img src="images/dashblock_shadownright.png"></div>-->
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                    	<div class="db_blockinfos">
+                            <div class="db_titleinfos">
+                            	<h4>Success Ratio</h4>
+                                <h3>3:4</h3>
+                            </div>
+                            <div class="db_icon">
+                            	<img src="assets/images/progo_icon2.png">
+                            </div>
+                            <!--<div class="left_shadow"><img src="images/dashblock_shadownleft.png"></div>
+                            <div class="right_shadow"><img src="im    ages/dashblock_shadownright.png"></div>-->
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                    	<div class="db_blockinfos">
+                            <div class="db_titleinfos">
+                            	<h4>Failed Ratio</h4>
+                                <h3>5:4</h3>
+                            </div>
+                            <div class="db_icon">
+                            	<img src="assets/images/progo_icon3.png">
+                            </div>
+                            <!--<div class="left_shadow"><img src="images/dashblock_shadownleft.png"></div>
+                            <div class="right_shadow"><img src="images/dashblock_shadownright.png"></div>-->
+                        </div>
+                            
+                    </div>
+                    
+                    <div class="col-md-3">
+                    	<div class="db_blockinfos">
+                            <div class="db_titleinfos">
+                            	<h4>Cumulated points</h4>
+                                <h3>2,345</h3>
+                            </div>
+                            <div class="db_icon">
+                            	<img src="assets/images/progo_icon4.png">
+                            </div>
+                            <!-- <div class="left_shadow"><img src="images/dashblock_shadownleft.png"></div>
+                            <div class="right_shadow"><img src="images/dashblock_shadownright.png"></div>-->
+                       </div>
+                           
+                    </div>
+                    
+                                      
+                    
+                </div><!--row-->
+            </div><!--db_blocks--> 
+            
+            <!-------->
+            
+            <div class="events_table">
+            	<div class="event_title">events available for prognostics</div>
+                <div class="table_outer ps_table">
+                	<div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr >
+                              <th>&nbsp;</th>
+                              <th>Championship</th>
+                              <th>Team A</th>
+                              <th>Team B</th>
+                              <th>Event Date</th>
+                              <th>Prognostic Date</th>
+                              <th>Prognostic Type</th>
+                              <th>Event Result</th>
+                              <th>Prognostic Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let follow of skillListData">
+                              <td>#1</td>
+                              <td>League 1</td>
+                              <td><img src="assets/images/team_icon1.png"> Olympic marseille</td>
+                              <td><img src="assets/images/team_icon1.png"> Olympic marseille</td>
+                              <td>July 30, 2021</td>
+                              <td>July 30, 2021</td>
+                              <td>---</td>
+                              <td>01</td>
+                              <td><button type="submit" class="ps_success">success</button></td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+                
+                <!--<div class="pg_numbers">
+                        	<div class="db_pagination">
+                            	<a href="#" class="pg_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#" class="pg_next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            </div>
+                    </div>-->                	
+                </div><!--pg_numbers-->             
+          </div> <!--db_body--> 
+        </div><!--db_right-->     
+</section>
